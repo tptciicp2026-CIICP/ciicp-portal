@@ -7,7 +7,7 @@ const Home = () => {
     <div className="min-h-screen bg-gray-50 overflow-x-hidden">
       {/* Dynamic Hero Section with Background Image */}
       <div 
-        className="relative bg-secondary text-white min-h-[600px] flex items-center justify-center pt-10 pb-24"
+        className="relative bg-secondary text-white min-h-[600px] flex items-center justify-center pt-10 pb-32 sm:pb-24"
         style={{
           backgroundImage: `linear-gradient(rgba(15, 41, 70, 0.85), rgba(15, 41, 70, 0.95)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')`,
           backgroundSize: 'cover',
@@ -17,12 +17,12 @@ const Home = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 w-full">
           <div className="inline-block bg-accent-500 text-white font-bold px-4 py-1.5 rounded-full text-sm mb-6 uppercase tracking-wider animate-pulse">
-            Admissions Open 2024-2026
+            Admissions Open
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 drop-shadow-lg">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 drop-shadow-lg">
             Continuing Education Centre
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-200 mb-10 max-w-4xl mx-auto leading-relaxed font-light drop-shadow">
+          <p className="text-lg sm:text-2xl text-gray-200 mb-10 max-w-4xl mx-auto leading-relaxed font-light drop-shadow px-2">
             Empowering students and professionals with industry-aligned certification courses since 1993. 
             Join the legacy of Thiagarajar Polytechnic College.
           </p>
@@ -38,7 +38,7 @@ const Home = () => {
       </div>
 
       {/* Floating Stats Section - Overlapping the Hero */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 relative z-20 mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 sm:-mt-24 relative z-20 mb-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Stat 1 */}
           <div className="bg-white rounded-xl shadow-2xl p-8 border-t-4 border-primary-600 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
