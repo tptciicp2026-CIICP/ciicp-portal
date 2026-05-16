@@ -5,7 +5,7 @@ import { Toaster } from 'react-hot-toast'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ciicp-portal">
       <Toaster position="top-center" />
       <AppRoutes />
     </BrowserRouter>
