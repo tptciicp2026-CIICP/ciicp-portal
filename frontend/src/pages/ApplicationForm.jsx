@@ -191,7 +191,7 @@ const ApplicationForm = () => {
         </div>
 
         {/* Stepper */}
-        <div className="bg-gray-50 border-b border-gray-100 px-6 py-4 flex justify-between items-center text-sm font-medium">
+        <div className="bg-gray-50 border-b border-gray-100 px-4 sm:px-6 py-4 flex justify-between items-center text-xs sm:text-sm font-medium overflow-x-auto whitespace-nowrap">
           <div className={`flex items-center ${step >= 1 ? 'text-primary-600' : 'text-gray-400'}`}>
             <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 mr-2 ${step >= 1 ? 'border-primary-600 bg-primary-50' : 'border-gray-300'}`}>1</div>
             Course
@@ -318,7 +318,7 @@ const ApplicationForm = () => {
           <div className={`space-y-6 ${step === 3 ? 'block' : 'hidden'}`}>
             <h3 className="text-xl font-semibold text-gray-800 border-b pb-2">Academic Qualification</h3>
             <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200 border border-gray-200">
+              <table className="min-w-[600px] sm:min-w-full divide-y divide-gray-200 border border-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
                     <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Examination</th>
