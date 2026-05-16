@@ -85,10 +85,11 @@ const StudentIdCard = () => {
     <div className="flex flex-col items-center justify-center py-10">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">Your Official ID Card</h1>
       
-      <div ref={cardRef} className="border border-gray-300 rounded-xl w-full max-w-2xl bg-white shadow-xl overflow-hidden relative">
-        {/* Card Header */}
+      <div className="w-full overflow-x-auto pb-4 flex justify-center md:justify-center justify-start">
+        <div ref={cardRef} className="border border-gray-300 rounded-xl min-w-[600px] max-w-[600px] h-[350px] bg-white shadow-xl overflow-hidden relative flex flex-col">
+          {/* Card Header */}
         <div className="bg-white p-4 flex items-center border-b-2 border-primary-600">
-          <img src="/logo.jpg" alt="TPT Logo" className="h-14 w-auto object-contain mr-4" />
+          <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="TPT Logo" className="h-14 w-auto object-contain mr-4" crossOrigin="anonymous" />
           <div className="text-left">
             <h3 className="text-primary-700 font-extrabold text-lg leading-tight uppercase tracking-wide">Thiagarajar Polytechnic College</h3>
             <p className="text-accent-600 font-bold text-sm">Continuing Education Centre</p>
@@ -96,7 +97,7 @@ const StudentIdCard = () => {
         </div>
         
         {/* Card Body */}
-        <div className="p-6 flex flex-col sm:flex-row justify-between bg-gray-50 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+        <div className="flex-1 p-6 flex flex-row justify-between bg-gray-50 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
           
           {/* Left Side: Student Details */}
           <div className="flex-1 pr-4 mb-4 sm:mb-0">
@@ -127,7 +128,7 @@ const StudentIdCard = () => {
           </div>
 
           {/* Right Side: Photo */}
-          <div className="flex flex-col items-center justify-center sm:pl-6 sm:border-l border-gray-200">
+          <div className="flex flex-col items-center justify-center pl-6 border-l border-gray-200">
             <div className="w-[100px] h-[130px] bg-white border-2 border-primary-200 overflow-hidden flex items-center justify-center shadow-md rounded">
               {appData.photo_data ? (
                 <img src={appData.photo_data} alt="Student" className="w-full h-full object-cover" />
@@ -139,7 +140,8 @@ const StudentIdCard = () => {
         </div>
         
         {/* Card Footer */}
-        <div className="bg-primary-600 h-3 w-full"></div>
+        <div className="bg-primary-600 h-3 w-full absolute bottom-0"></div>
+        </div>
       </div>
       
       <button className="mt-8 bg-primary-600 hover:bg-primary-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-colors" onClick={downloadPDF}>

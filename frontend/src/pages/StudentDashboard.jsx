@@ -105,7 +105,7 @@ const StudentDashboard = () => {
     
     try {
       const img = new Image();
-      img.src = '/logo.jpg';
+      img.src = import.meta.env.BASE_URL + 'logo.jpg';
       await new Promise((resolve, reject) => {
         img.onload = resolve;
         img.onerror = reject;
