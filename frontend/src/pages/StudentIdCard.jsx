@@ -85,7 +85,7 @@ const StudentIdCard = () => {
     <div className="flex flex-col items-center justify-center py-10">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">Your Official ID Card</h1>
       
-      <div className="w-full overflow-x-auto pb-4 flex justify-center md:justify-center justify-start">
+      <div className="w-full overflow-x-auto pb-4 flex justify-start sm:justify-center">
         <div ref={cardRef} className="border border-gray-300 rounded-xl min-w-[600px] max-w-[600px] h-[350px] bg-white shadow-xl overflow-hidden relative flex flex-col">
           {/* Card Header */}
         <div className="bg-white p-4 flex items-center border-b-2 border-primary-600">
